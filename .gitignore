@@ -12,6 +12,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# logo
+public/zekalit_logo.svg
 
 # environment variables
 .env
