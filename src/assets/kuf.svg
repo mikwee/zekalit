@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="23.130163mm"
+   height="50.650715mm"
+   viewBox="0 0 23.130163 50.650715"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="kuf.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.78484147"
+     inkscape:cx="43.957922"
+     inkscape:cy="94.923628"
+     inkscape:window-width="1920"
+     inkscape:window-height="1132"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="-2"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path15" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.397916,-123.29583)">
+    <g
+       id="g8"
+       inkscape:label="ק"
+       inkscape:export-filename="../src/assets/kuf.png"
+       inkscape:export-xdpi="219.63"
+       inkscape:export-ydpi="219.63"
+       transform="translate(8.7857777,14.241363)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+         d="m 90.841364,130.11947 v 24.09289"
+         id="path7"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1"
+         d="m 88.452117,110.91001 c 0,0 12.223153,0.56186 15.476643,5.30251 7.33846,10.69283 -8.28289,26.12587 -8.28289,26.12587"
+         id="path8"
+         sodipodi:nodetypes="csc" />
+    </g>
+  </g>
+</svg>
