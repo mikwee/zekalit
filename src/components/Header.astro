@@ -1,11 +1,13 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/zekalit_logo.png';
 ---
 
 <header>
     <nav>
-        <a href="/"><img id="logo" alt="זה קליט" src="/zekalit_logo.png"/></a>
+        <a href="/"><Image id="logo" alt="זה קליט" src={logo} /></a>
         <div class="internal-links">
             <HeaderLink href="/">ביקורות</HeaderLink>
             <HeaderLink href="/about">אודות</HeaderLink>
