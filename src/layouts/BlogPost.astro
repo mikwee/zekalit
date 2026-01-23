@@ -63,16 +63,21 @@ const cover = mbid
 			.prose h6 {
 				font-size: 20px;
 			}
-			/*.album-cover {
-				width: 200px;
-				height: 200px;
-			}*/
+			.album-cover {
+				width: 300px;
+				height: 300px;
+			}
       .title {
           margin-bottom: 1em;
 					margin-right: 10px;
           padding: 1em 0;
           text-align: center;
           line-height: 1;
+      }
+      .knob {
+        width: 35%;
+        margin-right: 31%;
+        margin-top: 2rem;
       }
       .date {
           margin-bottom: 0.5em;
@@ -107,7 +112,6 @@ const cover = mbid
 						<h5>{artist}</h5>
 						<h6>{year}</h6>
           </div>
-          <Knob spin={rating} />
         </div>
         <slot />
       </article>
