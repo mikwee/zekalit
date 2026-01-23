@@ -1,14 +1,64 @@
 ---
 import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+
+const title = "אודות";
 ---
 
-<Layout
-	title="על הבלוג"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
+<html lang="he">
+  <head>
+    <BaseHead title={title} />
+		<style>
+      main {
+      	width: calc(100% - 2em);
+        max-width: 100%;
+        margin: 0;
+      }
+      hero-image {
+        width: 100%;
+      }
+      .hero-image img {
+        display: block;
+        margin: 0 auto;
+      	border-radius: 12px;
+        box-shadow: var(--box-shadow);
+      }
+      .prose {
+					display: flex;
+          width: 720px;
+          max-width: calc(100% - 2em);
+          margin: auto;
+          padding: 1em;
+          color: rgb(var(--gray-dark));
+      }
+			.prose h6 {
+				font-size: 20px;
+			}
+			.album-cover {
+				width: 200px;
+				height: 200px;
+			}
+      .title {
+          margin-bottom: 1em;
+					margin-right: 10px;
+          padding: 1em 0;
+          text-align: center;
+          line-height: 1;
+      }
+      .date {
+          margin-bottom: 0.5em;
+          color: rgb(var(--gray));
+      }
+      .last-updated-on {
+          font-style: italic;
+      }
+		</style>
+  </head>
+
+	<body dir="rtl">
+    <Header />
+    <main>
 	<p>ב-20 בינואר 2026, מגזין המוזיקה המקוון “פיצ’פורק” <a
 href="(https://pitchfork.com/news/a-new-era-for-pitchfork-introducing-reader-scores-and-commenting/)">הכריז
 על חומת תשלום בגובה חמישה דולרים לחודש</a> שתעמוד בפני הביקורות שלו.
@@ -28,5 +78,6 @@ Great Heights</a>”, ספרו של עיתונאי המוזיקה כריס דו�
 באופן חסר הבחנה וכנראה בלי לשאול כל אמן - פשוט כדי שאוכל לדבר על <a
 href="https://rateyourmusic.com/artist/junior_senior">הלהקה האהובה
 עליי</a>.</p>
-
-</Layout>
+		</main>
+	</body>
+</html>
