@@ -1,8 +1,13 @@
 ---
-title: 'Markdown Style Guide'
+title: 'Oracular Spectacular'
+artist: 'MGMT'
+year: 2008
+rating: 5
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jun 19 2024'
 heroImage: '../../assets/blog-placeholder-1.jpg'
+localCover: '../../assets/covers/OracularSpectacular.jpg'
+mbid: 'f7da2770-bf72-3dea-8904-ff6135822724'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
