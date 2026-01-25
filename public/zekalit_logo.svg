@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="146.66289mm"
-   height="59.665085mm"
-   viewBox="0 0 146.66289 59.665085"
+   width="139.7197mm"
+   height="60.517815mm"
+   viewBox="0 0 139.7197 60.517814"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    sodipodi:docname="zekalit_logo.svg"
-   inkscape:export-filename="zekalit_logo_bg.png"
+   inkscape:export-filename="../src/assets/zekalit_logo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.78484147"
-     inkscape:cx="149.71176"
-     inkscape:cy="130.59962"
+     inkscape:zoom="0.37555276"
+     inkscape:cx="91.864588"
+     inkscape:cy="-366.12698"
      inkscape:window-width="1920"
      inkscape:window-height="1132"
      inkscape:window-x="0"
@@ -38,14 +38,24 @@
      showguides="true"
      inkscape:export-bgcolor="#ffffff00">
     <sodipodi:guide
-       position="134.70756,253.44838"
+       position="134.70756,227.47088"
        orientation="0,-1"
        id="guide6"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="104.22051,287.85715"
+       position="104.22051,261.87965"
        orientation="0,-1"
        id="guide7"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="41.826905,23.820496"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="118.30912,-9.8640275"
+       orientation="0,-1"
+       id="guide2"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -98,7 +108,8 @@
      transform="translate(-31.136111,-100.0401)">
     <g
        id="g6"
-       inkscape:label="ז">
+       inkscape:label="ז"
+       transform="translate(-7.1513297,-0.15155543)">
       <path
          style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1"
          d="m 165.84368,143.59172 1.77019,-22.15686 c 0,0 -0.1826,-2.42296 2.38493,-4.95786"
@@ -106,7 +117,7 @@
          sodipodi:nodetypes="ccc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:3.71499;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker16)"
-         d="m 177.16735,119.11915 -22.64733,-8.1894"
+         d="M 177.16735,119.11915 161.01047,111.752"
          id="path2"
          sodipodi:nodetypes="cc" />
     </g>
@@ -129,7 +140,8 @@
        inkscape:label="ק"
        inkscape:export-filename="../src/assets/kuf.png"
        inkscape:export-xdpi="219.63"
-       inkscape:export-ydpi="219.63">
+       inkscape:export-ydpi="219.63"
+       transform="translate(0,0.85272824)">
       <path
          style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
          d="m 90.841364,130.11947 v 24.09289"
@@ -137,7 +149,7 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1"
-         d="m 88.452117,110.91001 c 0,0 12.223153,0.56186 15.476643,5.30251 7.33846,10.69283 -8.28289,26.12587 -8.28289,26.12587"
+         d="m 88.452117,110.91001 c 0,0 12.223153,0.56186 15.476643,5.30251 7.33846,10.69283 -8.28289,25.16702 -8.28289,25.16702"
          id="path8"
          sodipodi:nodetypes="csc" />
     </g>
@@ -149,7 +161,7 @@
        inkscape:label="ל" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3.71499;stroke-dasharray:none;stroke-opacity:1"
-       d="m 60.517809,109.18295 v 16.23931"
+       d="m 60.517809,108.47345 v 16.23931"
        id="path11"
        sodipodi:nodetypes="cc" />
     <path
