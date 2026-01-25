@@ -15,6 +15,9 @@ pnpm-debug.log*
 # logo
 public/zekalit_logo.svg
 
+# covers
+src/assets/covers/
+
 # environment variables
 .env
 .env.production
