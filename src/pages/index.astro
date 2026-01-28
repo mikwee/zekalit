@@ -23,6 +23,14 @@ console.log(posts[0].data.localCover.src);
 			main {
 				width: 960px;
 			}
+			.reviews-section {
+				background-color: darkgray;
+				border-radius: 8px;
+				padding: 2%;
+			}
+			.reviews-title {
+				margin-bottom: 15px;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -97,7 +105,8 @@ console.log(posts[0].data.localCover.src);
 	<body dir="rtl">
 		<Header />
 		<main>
-			<section>
+			<section class="reviews-section">
+				<h4 class="reviews-title">ביקורות חדשות</h4>
 				<ul>
 					{
 						posts.map((post) => (
