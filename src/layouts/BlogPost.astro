@@ -30,27 +30,6 @@ const {
   mbid, 
   localCover 
 } = post.data;
-
-// Your cover logic (add fallback to prevent broken images)
-
-// 1. Glob all possible covers
-const covers = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/covers/mbid-*.jpg'
-);
-
-// 2. Build the exact key used by the glob
-const key = `/src/assets/covers/mbid-${mbid}.jpg`;
-
-// 3. Fallback to a placeholder if missing
-let src: string;
-if (covers[key]) {
-  const mod = await covers[key]();
-  src = mod.default.src;
-} else {
-  // Placeholder is an imported image from src/assets
-  // import Placeholder from '../assets/placeholder.jpg';
-  src = Placeholder.src;
-}
 ---
 
 <html lang="he">
@@ -113,7 +92,7 @@ if (covers[key]) {
     <main>
       <article>
         <div class="prose">
-          <img class="album-cover" width="300" height="300" alt=`Cover art for ${title}` src={src} />
+          <img class="album-cover" width="300" height="300" alt=`Cover art for ${title}` src={localCover.src || Placeholder.src} />
           <div class="title">
             <div class="date">
               <FormattedDate date={pubDate} />
