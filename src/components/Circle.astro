@@ -3,7 +3,7 @@ import '../styles/circle.css';
 
 const { value } = Astro.props;
 
-const p = "p" + (value * 2.5).toString();
+const p = "p" + (Math.round(value * 2.5)).toString();
 ---
 <div class=`c100 ${p}`>
     <span><b>{value}</b></span>
