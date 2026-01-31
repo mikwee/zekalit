@@ -1,0 +1,136 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import Placeholder from '../../assets/covers/placeholder.png';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="he">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.reviews-section {
+				background-color: darkgray;
+				border-radius: 8px;
+				padding: 2%;
+				margin-bottom: 5%;
+			}
+			.reviews-title {
+				margin-bottom: 15px;
+			}
+			.reviews {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				justify-content: space-between;
+			}
+			.reviews li {
+				width: calc(50% - 1rem);
+				box-sizing: border-box;
+			}
+			.reviews li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			/* .reviews li:first-child {
+				width: 100%;
+				margin-bottom: 1rem;
+				text-align: center;
+			} */
+			.reviews li .title {
+				font-size: 1.5rem;
+			}
+			.reviews li img {
+				width: 66.6px;
+				height: 66.6px;
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+			ul li a {
+				display: flex;
+				align-items: center;
+			}
+			.review-data {
+				margin-right: 4%;
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			.reviews li a:hover h4,
+			.reviews li a:hover .date {
+				color: rgb(var(--accent));
+			}
+			.reviews a:hover img {
+				box-shadow: var(--box-shadow);
+			}
+			.posts li {
+				margin-bottom: 1rem;
+			}
+			.posts li a {
+				text-decoration: none;
+			}
+			.posts li a b {
+				text-decoration: underline;
+			}
+			.postDate {
+				color: gray;
+				margin-right: 10px;
+				font-size: 1.2rem;
+			}
+			@media (max-width: 720px) {
+				.reviews {
+					gap: 0.5em;
+				}
+				.reviews li {
+					width: 100%;
+					text-align: center;
+				}
+				/* .reviews li:first-child {
+					margin-bottom: 0;
+				}
+				.reviews li:first-child .title {
+					font-size: 1.563em;
+				} */
+			}
+		</style>
+	</head>
+	<body dir="rtl">
+		<Header />
+		<main>
+      <ul class="posts">
+				{
+					posts.map((post) => (
+						<li>
+							<a class="title" href={`/blog/${post.id}/`}>
+								<b>{post.data.title}</b>
+								<span class="postDate"><FormattedDate date={post.data.pubDate} /></span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+    </main>
+    <Footer />
+  </body>
+</html>
