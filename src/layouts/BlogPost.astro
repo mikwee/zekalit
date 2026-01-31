@@ -52,7 +52,7 @@ const {
 				line-height: 1;
 			}
 			.title h1 {
-				margin: 0 0 0.5em 0;
+				margin-bottom: 1rem;
 			}
 			.date {
 				margin-bottom: 0.5em;
@@ -84,6 +84,7 @@ const {
 							}
 						</div>
 						<h1>{title}</h1>
+						{description && <h4 class="description">{description}</h4>}
 						<hr />
 					</div>
 					<slot />
