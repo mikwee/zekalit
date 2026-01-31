@@ -8,11 +8,13 @@ import Header from '../components/Header.astro';
 import Placeholder from '../assets/covers/placeholder.png';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('reviews')).sort(
+const reviews = (await getCollection('reviews')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-console.log(posts[0].data.localCover.src);
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
@@ -27,11 +29,12 @@ console.log(posts[0].data.localCover.src);
 				background-color: darkgray;
 				border-radius: 8px;
 				padding: 2%;
+				margin-bottom: 5%;
 			}
 			.reviews-title {
 				margin-bottom: 15px;
 			}
-			ul {
+			.reviews {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 2rem;
@@ -40,23 +43,23 @@ console.log(posts[0].data.localCover.src);
 				padding: 0;
 				justify-content: space-between;
 			}
-			ul li {
+			.reviews li {
 				width: calc(50% - 1rem);
 				box-sizing: border-box;
 			}
-			ul li * {
+			.reviews li * {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
-			/* ul li:first-child {
+			/* .reviews li:first-child {
 				width: 100%;
 				margin-bottom: 1rem;
 				text-align: center;
 			} */
-			ul li .title {
+			.reviews li .title {
 				font-size: 1.5rem;
 			}
-			ul li img {
+			.reviews li img {
 				width: 66.6px;
 				height: 66.6px;
 				margin-bottom: 0.5rem;
@@ -78,25 +81,39 @@ console.log(posts[0].data.localCover.src);
 				margin: 0;
 				color: rgb(var(--gray));
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
+			.reviews li a:hover h4,
+			.reviews li a:hover .date {
 				color: rgb(var(--accent));
 			}
-			ul a:hover img {
+			.reviews a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			.posts li {
+				margin-bottom: 1rem;
+			}
+			.posts li a {
+				text-decoration: none;
+			}
+			.posts li a b {
+				text-decoration: underline;
+			}
+			.postDate {
+				color: gray;
+				margin-right: 10px;
+				font-size: 1.2rem;
+			}
 			@media (max-width: 720px) {
-				ul {
+				.reviews {
 					gap: 0.5em;
 				}
-				ul li {
+				.reviews li {
 					width: 100%;
 					text-align: center;
 				}
-				/* ul li:first-child {
+				/* .reviews li:first-child {
 					margin-bottom: 0;
 				}
-				ul li:first-child .title {
+				.reviews li:first-child .title {
 					font-size: 1.563em;
 				} */
 			}
@@ -107,9 +124,9 @@ console.log(posts[0].data.localCover.src);
 		<main>
 			<section class="reviews-section">
 				<h4 class="reviews-title">ביקורות חדשות</h4>
-				<ul>
+				<ul class="reviews">
 					{
-						posts.map((post) => (
+						reviews.map((post) => (
 							<li>
 								<a href={`/reviews/${post.id}/`}>
 									{post.data.localCover && (
@@ -124,6 +141,21 @@ console.log(posts[0].data.localCover.src);
 						))
 					}
 				</ul>
+			</section>
+			<section>
+				<h4 class="reviews-title">פוסטים חדשים</h4>
+				<ul class="posts">
+					{
+						posts.map((post) => (
+							<li>
+								<a class="title" href={`/blog/${post.id}/`}>
+									<b>{post.data.title}</b>
+									<span class="postDate"><FormattedDate date={post.data.pubDate} /></span>
+								</a>
+							</li>
+						))
+					}
+				</ul>				
 			</section>
 		</main>
 		<Footer />
