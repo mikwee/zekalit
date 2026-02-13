@@ -12,6 +12,7 @@ const reviews = defineCollection({
 			year: z.number(),
 			rating: z.number(),
 			description: z.string().optional(),
+			author: z.string(),
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
@@ -28,6 +29,7 @@ const blog = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string().optional(),
+			author: z.string(),
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),

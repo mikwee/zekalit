@@ -4,6 +4,7 @@ artist: 'MGMT'
 year: 2008
 rating: 40
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+author: "mikwee"
 pubDate: 'Jun 19 2024'
 localCover: '../../assets/covers/mbid-f7da2770-bf72-3dea-8904-ff6135822724.jpg'
 mbid: 'f7da2770-bf72-3dea-8904-ff6135822724'

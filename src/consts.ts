@@ -3,3 +3,12 @@
 
 export const SITE_TITLE = 'זה קליט';
 export const SITE_DESCRIPTION = 'בלוג מוזיקה עצמאי בעברית';
+
+export const AUTHORS = {
+  mikwee: {
+    name: "ג'ורג' הספרן",
+    bio: "הקמתי את האתר הזה, ואני כותב פה את הביקורות.",
+    pfp: true,
+    twitter: "toon_mikwee"
+  }
+}

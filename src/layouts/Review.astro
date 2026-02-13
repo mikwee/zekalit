@@ -8,6 +8,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Circle from '../components/Circle.astro';
+import AuthorCard from '../components/AuthorCard.astro';
 import Placeholder from '../assets/covers/placeholder.png';
 
 // Type the prop properly
@@ -24,6 +25,7 @@ const {
   year,
   rating,
   description, 
+  author,
   pubDate, 
   updatedDate, 
   heroImage, 
@@ -36,6 +38,9 @@ const {
   <head>
     <BaseHead title={title} description={description} />
 		<style>
+      :root {
+         --gray-icon: rgb(96, 115, 159);
+      }
       main {
       	width: calc(100% - 2em);
         max-width: 100%;
@@ -77,6 +82,12 @@ const {
           text-align: center;
           line-height: 1;
       }
+      .social-links {
+    		display: flex;
+    		justify-content: center;
+    		gap: 1em;
+    		margin-top: 1em;
+    	}
       .knob {
         padding-left: 12px;
         margin-top: 2rem;
@@ -121,6 +132,7 @@ const {
         </div>
         <slot />
       </article>
+      <AuthorCard author={author} />
     </main>
     <Footer />
   </body>
