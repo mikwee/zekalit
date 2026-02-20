@@ -7,7 +7,7 @@ import logo from '../assets/zekalit_logo.png';
 
 <header>
     <nav>
-        <a href="/"><Image id="logo" alt="זה קליט" src={logo} /></a>
+        <a href="/"><Image id="logo" alt="זה קליט" loading="eager" src={logo} /></a>
         <div class="internal-links">
             <HeaderLink href="/reviews">ביקורות</HeaderLink>
             <HeaderLink href="/blog">בלוג</HeaderLink>
@@ -22,7 +22,8 @@ import logo from '../assets/zekalit_logo.png';
         box-shadow: 0 10px 8px rgba(var(--black), 8%);
     }
     #logo {
-        width: 10rem;
+        width: 15ch;
+        margin-top: 1ch;
     }
     nav {
         display: flex;
@@ -33,7 +34,6 @@ import logo from '../assets/zekalit_logo.png';
     nav a {
       	align-self: center;
         margin-left: 1.2rem;
-        padding: 1em 0.5em;
         color: var(--black);
         border-bottom: 4px solid transparent;
         text-decoration: none;
