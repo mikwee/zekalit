@@ -10,6 +10,7 @@ import Header from '../components/Header.astro';
 import Circle from '../components/Circle.astro';
 import AuthorCard from '../components/AuthorCard.astro';
 import Placeholder from '../assets/covers/placeholder.png';
+import { SITE_TITLE } from '../consts';
 
 // Type the prop properly
 type Props = {
@@ -36,7 +37,7 @@ const {
 
 <html lang="he">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title=`${SITE_TITLE} | ${title}` description={description} />
 		<style>
       :root {
          --gray-icon: rgb(96, 115, 159);
