@@ -1,6 +1,6 @@
 ---
 import { AUTHORS } from '../consts';
-import Placeholder from '../assets/pfps/placeholder.png';
+import Placeholder from '../../public/pfps/placeholder.png';
 
 type Props = {
   author: string;
@@ -10,7 +10,7 @@ const { author } = Astro.props;
 const authorData = AUTHORS[author];
 ---
 <div class="author-card">
-  <img width="100" height="100" alt="" src={authorData.pfp ? `../../src/assets/pfps/${author}.png` : Placeholder.src} />
+  <img width="100" height="100" alt="" src={authorData.pfp ? `/pfps/${author}.png` : Placeholder.img} />
   <div class="card-text">
     <h4>{authorData.name}</h4>
     <div class="social-links">
