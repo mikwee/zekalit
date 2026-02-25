@@ -124,6 +124,10 @@ blockquote {
 	margin: 0;
 	font-size: 1.333em;
 }
+details::details-content {
+	background-color: #b5b5b5;
+	border-radius: 7px;
+}
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
