@@ -3,6 +3,7 @@ title: "Fush Yu Mang"
 artist: "Smash Mouth"
 year: 1997
 rating: 34
+description: "בחזרה לאלבום הראשון של להקה מצוינת שהופיעה ממש עכשיו ביפו"
 author: "mikwee"
 pubDate: "Feb 25 2026"
 localCover: "../../assets/covers/mbid-b29f6c62-730d-3089-9753-dbc4cffa6ea9.jpg"
