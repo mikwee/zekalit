@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="4.4397338"
-     inkscape:cx="19.708389"
-     inkscape:cy="57.323257"
+     inkscape:zoom="8.3593204"
+     inkscape:cx="7.5963113"
+     inkscape:cy="14.773928"
      inkscape:window-width="1920"
      inkscape:window-height="1132"
      inkscape:window-x="0"
@@ -55,6 +55,15 @@
          id="path15" />
     </marker>
   </defs>
+  <rect
+     style="fill:#c4c4c4;fill-opacity:1;stroke:none;stroke-width:11.562"
+     id="rect1"
+     width="7.8332963"
+     height="7.8332963"
+     x="0.31668517"
+     y="0.31668517"
+     inkscape:label="BG"
+     ry="1.1077954" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -65,7 +74,7 @@
        inkscape:export-filename="../src/assets/kuf.png"
        inkscape:export-xdpi="219.63"
        inkscape:export-ydpi="219.63"
-       transform="matrix(0.14352896,0,0,0.14352896,-9.5708401,-15.054064)">
+       transform="matrix(0.12710774,0,0,0.12710774,-7.9914977,-12.847383)">
       <path
          style="fill:none;stroke:#000000;stroke-width:3.715;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
          d="m 90.841364,130.11947 v 24.09289"
@@ -78,7 +87,8 @@
          sodipodi:nodetypes="csc" />
     </g>
   </g>
-  <style>
+  <style
+     id="style1">
     path { stroke: #000; }
     @media (prefers-color-scheme: dark) {
     path { stroke: #FFF; }
